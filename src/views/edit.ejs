@@ -1,0 +1,21 @@
+<div class="card mb-3" style="max-width: 500px;">
+	<div class="row g-0">
+		<h4 class="card-title p-4">Enter contacts</h4>
+	</div>
+	<div class="p-4">
+		<form action="/edit/<%= data.contactos_id %>" method="POST">
+			<div class="mb-4">
+				<input type="text" name="name" class="form-control" id="name" placeholder="Name" value="<%= data.nombre %>">
+			</div>
+			<div class="mb-4">
+				<input type="text" name="lastname" class="form-control" id="lastname" placeholder="Lastname" value="<%= data.apellido %>">
+			</div>
+			<div class="mb-4">
+				<input type="text" name="phone" class="form-control" id="phone" placeholder="Phone Number" value="<%= data.telefono %>">
+			</div>
+			<div class="d-grid gap-2">
+				<button type="submit" class="btn btn-primary">Edit Contact</button>
+			</div>	
+		</form>
+	</div>
+</div>

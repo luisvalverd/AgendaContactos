@@ -1,0 +1,30 @@
+
+<div class="card mb-3" style="max-width: 500px;">
+	<div class="row g-0">
+		<h4 class="card-title p-4">Register</h4>
+	</div>
+	<div class="p-4">
+		<form action="/signup" method="POST">
+			<div class="form-floating mb-4">
+				<input type="text" name="username" class="form-control" id="username" placeholder="UserName">
+				<label for="username">Username</label>
+			</div>
+			<div class="form-floating mb-4">
+				<input type="email" name="email" name="email" class="form-control" id="email" placeholder="email">
+				<label for="email">Email</label>
+			</div>
+			<div class="form-floating mb-4">
+				<input type="password" name="password" class="form-control" id="password" placeholder="password">
+				<label for="password">Password</label>
+			</div>
+			<div class="form-floating mb-4">
+				<input type="password" name="passwordConfirm" class="form-control" id="passwordConfirm" placeholder="confirm password">
+				<label for="passwordConfirm">Confirm Password</label>
+			</div>
+			<div class="d-grid gap-2">
+				<button type="submit" class="btn btn-primary">Sign up</button>
+			</div>
+			
+		</form>
+	</div>
+</div>

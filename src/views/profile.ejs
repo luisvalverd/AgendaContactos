@@ -1,0 +1,29 @@
+
+<% if(datas.length == 0) { %>
+	<div class="alert alert-primary" role="alert">
+		No tiene ningun contacto
+	</div>
+<% } %>
+
+<% for(var i = 0; i < datas.length; i++) { %>
+	<div class="row justify-content-center">
+		<div class="card mb-3 text-align-center" style="max-width: 400px;">
+			<h4 class="card-title p-2">Contact <%= i+1 %></h4>
+			<ul class="list-group list-group-flush">
+				<li class="list-group-item">
+					Nombre: <%= datas[i].nombre %>
+				</li>
+				<li class="list-group-item">
+					Apellido: <%= datas[i].apellido %>
+				</li>
+				<li class="list-group-item">
+					Telefono: <%= datas[i].telefono %>
+				</li>
+			</ul>
+			<div class="card-body">
+				<a href="/edit/<%= datas[i].contactos_id %>" class="btn btn-primary">Edit</a>
+				<a href="/delete/<%= datas[i].contactos_id %>" class="btn btn-danger">Delete</a>
+			</div>
+		</div>
+	</div>
+<% } %>
